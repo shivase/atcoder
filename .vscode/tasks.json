@@ -4,7 +4,7 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "competitiveTestSample",
+      "label": "テスト実行",
       "type": "shell",
       "command": "cd ${fileDirname} && oj t -c 'python3 ./main.py' -d ./tests",
       "presentation": {
@@ -14,7 +14,7 @@
       }
     },
     {
-      "label": "competitiveSubmit",
+      "label": "提出",
       "type": "shell",
       "command": "cd ${fileDirname} && acc submit main.py",
       "presentation": {
