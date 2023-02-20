@@ -5,22 +5,14 @@ def main():
     _ = input()
     x = list(map(int, input().split()))
 
-    left = min(x)
-    right = max(x)
-
-    stamina_min = None
-
-    for i in range(left, right + 1):
+    results = list()
+    for i in range(min(x), max(x) + 1):
         stamina = 0
         for p in x:
             stamina += (i - p) ** 2
+        results.append(stamina)
 
-        if stamina_min is None:
-            stamina_min = stamina
-        elif stamina < stamina_min:
-            stamina_min = stamina
-
-    print(stamina_min)
+    print(min(results))
 
 
 if __name__ == "__main__":
