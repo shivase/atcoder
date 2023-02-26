@@ -11,6 +11,11 @@
         "reveal": "always",
         "focus": true,
         "panel": "shared"
+      },
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
       }
     },
     {
