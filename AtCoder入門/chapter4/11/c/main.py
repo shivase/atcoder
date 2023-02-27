@@ -13,6 +13,9 @@ def main():
                 continue
             if a * 10000 + b * 5000 + c * 1000 == Y:
                 x, y, z = a, b, c
+                break
+        if x > -1 or y > -1 or z > -1:
+            break
 
 
     print(x,y,z)
